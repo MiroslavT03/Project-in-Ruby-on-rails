@@ -1,0 +1,21 @@
+.button{
+ text-color: #000000;
+ text-decoration:none; 
+ text-align:center; 
+ padding:3px 2px; 
+ border:none; 
+ -webkit-border-radius:8px;
+ -moz-border-radius:8px; 
+ border-radius: 8px; 
+ font:12px Tahoma, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#000000; 
+ background-color:#ffffff; 
+ 
+
+ 
+ -webkit-box-shadow:4px 4px 10px #bababa, inset 0px 0px 3px #ffffff; 
+ -moz-box-shadow: 4px 4px 10px #bababa,  inset 0px 0px 3px #ffffff;  
+ box-shadow:4px 4px 10px #bababa, inset 0px 0px 3px #ffffff;  
+  
+  }

@@ -1,0 +1,22 @@
+<span class="button"><%= link_to 'Додати категорію доходів/витрат', new_article_path %></span>
+
+          <table class="col-lg-12" width="200" border="3" align="center" 
+  cellpadding="8" cellspacing="0">
+            <tr>
+              <th>Назва категорії</th>
+              <th>Короткий опис</th>
+              <th colspan="2">Управління</th>
+            </tr>
+            <% @articles.each do |article| %>
+              <tr>
+                <td><%= article.title %></td>
+                <td><%= article.text %></td>
+
+
+                <td class="col-lg-1"><%= link_to 'Редагувати', edit_article_path(article) %></td>
+                <td class="col-lg-1"><%= link_to 'Видалити', article_path(article),
+                                method: :delete,
+                                data: { confirm: 'Ви впевнені?' } %></td>
+              </tr>
+            <% end %>
+          </table>

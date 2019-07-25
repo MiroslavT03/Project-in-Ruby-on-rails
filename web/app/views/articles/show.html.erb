@@ -1,0 +1,12 @@
+
+<p>
+  <%= @article.title %>
+  <strong>Назва:</strong>
+</p>
+
+<p>
+  <strong>Короткий опис:</strong>
+  <%= @article.text %>
+</p>
+<%= link_to 'Редагувати', edit_article_path(@article) %> |
+<%= link_to 'Назад', articles_path %>

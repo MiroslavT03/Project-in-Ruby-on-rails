@@ -1,0 +1,21 @@
+<span class="button"><%= link_to 'Додати новий актив', new_activity_path %></span>
+
+  <table class="col-lg-12" width="200" border="3" align="center" 
+  cellpadding="8" cellspacing="0">
+                <tr>
+                  <th>Назва</th>
+                  <th>Опис</th>
+                 <th colspan="2">Управління</th>
+                </tr>
+
+                <% @activities.each do |activities| %>
+                  <tr>
+                    <td><%= activities.title %></td>
+                    <td><%= activities.text %></td>
+                    <td><%= link_to 'Редагувати', edit_activity_path(activities) %></td>
+                    <td><%= link_to 'Видалити', activity_path(activities),
+                                    method: :delete,
+                                    data: { confirm: 'Ви впевнені?' } %></td>
+                  </tr>
+                <% end %>
+              </table>

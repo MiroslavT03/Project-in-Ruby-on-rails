@@ -1,0 +1,10 @@
+<p>
+  <strong>Назва:</strong>
+  <%= @activities.title %>
+</p>
+<p>
+  <strong>Опис:</strong>
+  <%= @activities.text %>
+</p>
+<%= link_to 'Редагувати', edit_activity_path(@activities) %> |
+<%= link_to 'Назад', activities_path %>
